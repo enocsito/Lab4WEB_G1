@@ -1,2 +1,6 @@
 # Lab4WEB_G1
+**¿Qué ocurre en cada caso presentado anteriormente con los operadores y porqué JS me permite esto?**
+**R//** JavaScript permite estos comportamientos porque es un lenguaje de tipado dinámico que realiza coerción automática de tipos, lo que significa que convierte automáticamente entre números y strings según el contexto. Esto hace que el lenguaje sea flexible y fácil de usar, pero también puede generar resultados inesperados si no se comprende bien cómo funciona internamente. 
 
+**¿El comportamiento de los flujos de control es similar a otros lenguajes y ambientes de desarrollo?**
+**R//** Sí, los flujos de control en JavaScript (if/else, for, while, do-while, switch, break, continue, try/catch) siguen la misma sintaxis y comportamiento que lenguajes como C, Java y C#. La principal diferencia está en las condiciones booleanas, donde JavaScript utiliza "truthiness" y "falsiness" - valores como 0, " ", null, undefined, NaN y false se evalúan como falsos, mientras que cualquier otro valor se considera verdadero, lo que puede ser más permisivo que otros lenguajes que requieren valores booleanos explícitos. 

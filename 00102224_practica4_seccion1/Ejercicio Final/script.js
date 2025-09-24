@@ -1,36 +1,21 @@
-function ordenar(arr) {
-    const nuevoArray = [...arr];
-    for (let i = 0; i < nuevoArray.length; i++) {
-        for (let j = 0; j < nuevoArray.length - i - 1; j++) {
-            if (nuevoArray[i] > nuevoArray[j + 1]) {
-                let temporal = nuevoArray[i];
-                nuevoArray[i] = nuevoArray[j + 1];
-                nuevoArray[j + 1] = temporal;
-            }
-        }
+const actividades = {
+    'lunes': '👤 Atender cliente específico',
+    'martes': '🚗 Visitar agencia fuera de la ciudad',
+    'miércoles': '🩰 Llevar a mi hija al ballet',
+    'miercoles': '🩰 Llevar a mi hija al ballet',
+    'jueves': '💻 Priorizar entregas de desarrollo',
+    'viernes': '🏠 Atender problemas de manera remota',
+    'sábado': '❤️ Hacer lo que mi esposa quiera',
+    'sabado': '❤️ Hacer lo que mi esposa quiera',
+    'domingo': '😴 Día libre'
+};
+
+function mostrarRecordatorio() {
+    const diaInput = document.getElementById('diaSemana').value.toLowerCase();
+    const resultado = document.getElementById('resultado');
+    if (actividades[diaInput]) {
+        resultado.textContent = actividades[diaInput];
+    } else {
+        resultado.textContent = 'Día no válido. Por favor ingresa un día de la semana.';
     }
-    return nuevoArray;
 }
-
-console.log(ordenar([14, 23, 99, 874, 93, 12]));
-
-function esPar (numero)  {
-    return numero % 2 === 0;
-}
-
-console.log(esPar(4));
-
-function calculaDiasCrecimiento (velocidadCrecimiento, velocidadDecrecimiento, alturaDeseada) {
-    let altura = 0;
-    let dias = 0;
-    while (altura < alturaDeseada) {
-        altura += velocidadCrecimiento;
-        dias++;
-        if (altura >= alturaDeseada) {
-            return dias;
-        }
-        altura -= velocidadDecrecimiento;
-    }
-    return dias;
-}
-console.log(calculaDiasCrecimiento(3, 2, 10));

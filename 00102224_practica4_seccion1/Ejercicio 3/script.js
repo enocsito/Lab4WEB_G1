@@ -14,13 +14,13 @@ function ordenar(arr) {
 
 console.log(ordenar([14, 23, 99, 874, 93, 12]));
 
-function esPar (numero)  {
+function esPar(numero) {
     return numero % 2 === 0;
 }
 
 console.log(esPar(4));
 
-function calculaDiasCrecimiento (velocidadCrecimiento, velocidadDecrecimiento, alturaDeseada) {
+function calculaDiasCrecimiento(velocidadCrecimiento, velocidadDecrecimiento, alturaDeseada) {
     let altura = 0;
     let dias = 0;
     while (altura < alturaDeseada) {
